@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lesson2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+      background-color:#1E88E5;
+    }
+     .jumbotron {
+      margin-bottom:0;
+      background-color:white;
+    }
+	button {
+    background-color: #1E88E5;
+    color: white;
+    padding: 14px 20px;
+    margin: 4px 4px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+	float:right;
+}
+button:hover {
+    opacity: 0.8;
+}
+	</style>
+</head>
+<body>
+
+<div class="jumbotron" style="background-color:white; padding:0%; min-height:1px;">
+  <div class="container-fluid text-right">
+ <a href="userhome.php" style="color:#1e88e5 font_size:16px;"> <img src="seventh.png" style="float:left;" height="60" width="330"></a>   <p><a href="userhome.php" style="color:#1e88e5 font_size:16px;"><p><a href="lesson.php" style="color:#1e88e5 font_size:16px;">Back</a></p></a></p>
+    
+  </div>
+</div>
+
+<div class="navbar navbar-default navbar-static-top" style="background-color:#1E88E5;">
+		<ul class="nav navbar-nav">
+			<li style="color:white; font-size:24px;padding-left:2%; padding-top:6%;">Logarithms</li>
+			</ul>
+	</div>
+	<div class="container">
+	<p>In mathematics, the logarithm is the inverse function to exponentiation. That means the logarithm of a given number x is the exponent to which another fixed number, the base b, must be raised, to produce that number x.
+	In the simplest case the logarithm counts repeated multiplication of the same factor; e.g.,
+	since 1000 = 10 × 10 × 10 = 103, the "logarithm to base 10" of 1000 is 3. The logarithm of x to base b is denoted as logb (x) (or, without parentheses, as logb x, or even without explicit base as log x, when no confusion is possible).
+	More generally, exponentiation allows any positive real number to be raised to any real power, always producing a positive result, so the logarithm for any two positive real numbers b and x where b is not equal to 1, is always a unique real number y.
+	More explicitly, the defining relation between exponentiation and logarithm is:
+{\displaystyle \log _{b}(x)=y\quad } {\displaystyle \log _{b}(x)=y\quad } exactly if {\displaystyle \quad b^{y}=x.} {\displaystyle \quad b^{y}=x.}</p>
+<br>
+<p>For example, log2 64 = 6, as 64 = 26.
+The logarithm to base 10 (that is b = 10) is called the common logarithm and has many applications in science and engineering. 
+The natural logarithm has the number e (that is b ≈ 2.718) as its base; its use is widespread in mathematics and physics, because of its simpler derivative.
+ The binary logarithm uses base 2 (that is b = 2) and is commonly used in computer science.
+Logarithms were introduced by John Napier in the early 17th century as a means to simplify calculations.
+ They were rapidly adopted by navigators, scientists, engineers, and others to perform computations more easily, using slide rules and logarithm tables.</p> 
+ <br>
+<p> Tedious multi-digit multiplication steps can be replaced by table look-ups and simpler addition because of the fact—important in its own right—that the logarithm of a product is the sum of the logarithms of the factors:
+{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y,\,} {\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y,\,}
+provided that b, x and y are all positive and b ≠ 1. The present-day notion of logarithms comes from Leonhard Euler, who connected them to the exponential function in the 18th century.
+Logarithmic scales reduce wide-ranging quantities to tiny scopes. For example, the decibel (dB) is a unit used to express log-ratios, mostly for signal power and amplitude (of which sound pressure is a common example). In chemistry, pH is a logarithmic measure for the acidity of an aqueous solution. Logarithms are commonplace in scientific formulae, and in measurements of the complexity of algorithms and of geometric objects called fractals. 
+They help describing frequency ratios of musical intervals, appear in formulas counting prime numbers or approximating factorials, inform some models in psychophysics, and can aid in forensic accounting.
+In the same way as the logarithm reverses exponentiation, the complex logarithm is the inverse function of the exponential function applied to complex numbers.
+ The discrete logarithm is another variant; it has uses in public-key cryptography.</p>
+ <br>
+ <p>Motivation and definition
+Addition, multiplication, and exponentiation are three fundamental arithmetic operations. Addition, the simplest of these, can be undone by subtraction: adding, say, 2 to 3 gives 5. The process of adding 2 can be undone by subtracting 2: 5 − 2 = 3. Multiplication, the next-simplest operation, can be undone by division: doubling a number x, i.e., multiplying x by 2, the result is 2x. To get back x, it is necessary to divide by 2. For example {\displaystyle 2\cdot 3=6} {\displaystyle 2\cdot 3=6} and the process of multiplying by 2 is undone by dividing by 2: {\displaystyle 6/2=3} {\displaystyle 6/2=3}. The idea and purpose of logarithms is also to undo a fundamental arithmetic operation, namely raising a number to a certain power, an operation also known as exponentiation.
+ For example, raising 2 to the third power of 2 yields 8, because 8 is the product of three factors of 2:
+{\displaystyle 2^{3}=2\times 2\times 2=8} {\displaystyle 2^{3}=2\times 2\times 2=8}
+The logarithm (with respect to base 2) of 8 is 3, reflecting the fact that 2 was raised to the third power to get 8.
+Exponentiation
+This subsection contains a short overview of the exponentiation operation, which is fundamental to understand logarithms. Raising b to the n-th power, where n is a natural number, is done by multiplying n factors equal to b. The n-th power of b is written bn, so that
+{\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factors}}}} {\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factors}}}}
+Exponentiation may be extended to by, where b is a positive number and the exponent y is any real number.[1] For example, b−1 is the reciprocal of b, that is, 1/b. Raising b to the power 1/2 is the square root of b. More generally, raising b to a rational power p/q, where p and q are integers, is given by
+{\displaystyle b^{p/q}={\sqrt[{q}]{b^{p}}},} {\displaystyle b^{p/q}={\sqrt[{q}]{b^{p}}},}</p>
+<br>
+<p>the q-th root of bp. Finally, any irrational number (a real number which is not rational) y can be approximated to arbitrary precision by rational numbers.
+ This can be used to compute the y-th power of b: for example {\displaystyle {\sqrt {2}}\approx 1.414...} {\displaystyle {\sqrt {2}}\approx 1.414...} and {\displaystyle b^{\sqrt {2}}} {\displaystyle b^{\sqrt {2}}} is increasingly well approximated by {\displaystyle b^{1},b^{1.4},b^{1.41},b^{1.414},...} {\displaystyle b^{1},b^{1.4},b^{1.41},b^{1.414},...}. A more detailed explanation, as well as the formula bm + n = bm · bn is contained in the article on exponentiation.
+Definition
+The logarithm of a positive real number x with respect to base b[nb 1] is the exponent by which b must be raised to yield x. In other words, the logarithm of x to base b is the solution y to the equation[2]
+{\displaystyle b^{y}=x.} {\displaystyle b^{y}=x.}
+The logarithm is denoted "logb x" (pronounced as "the logarithm of x to base b" or "the base-b logarithm of x" or (most commonly) "the log, base b, of x").
+In the equation y = logb x, the value y is the answer to the question "To what power must b be raised, in order to yield x?".</p>
+<br>
+<p>Examples
+log2 16 = 4 , since 24 = 2 ×2 × 2 × 2 = 16.
+Logarithms can also be negative: {\displaystyle \quad \log _{2}\!{\frac {1}{2}}=-1\quad } {\displaystyle \quad \log _{2}\!{\frac {1}{2}}=-1\quad } since {\displaystyle \quad 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.} {\displaystyle \quad 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.}
+log10150 is approximately 2.176, which lies between 2 and 3, just as 150 lies between 102 = 100 and 103 = 1000.
+For any base b, logb b = 1 and logb 1 = 0, since b1 = b and b0 = 1, respectively.</p>
+</div>
+	<br>
+	<br>
+	 
+	</body>
